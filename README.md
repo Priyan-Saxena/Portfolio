@@ -20,13 +20,8 @@
 - [Why This Exists](#-why-this-exists)
 - [The Experience](#-the-experience)
 - [Features, In Detail](#-features-in-detail)
-- [Preview](#️-preview)
 - [Tech Stack](#️-tech-stack)
 - [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Deployment](#-deployment)
-- [Customizing This for Yourself](#-customizing-this-for-yourself)
-- [Browser Support](#-browser-support)
 - [Featured Projects](#-featured-projects)
 - [Hackathons](#-hackathons)
 - [Credits](#-credits)
@@ -66,17 +61,6 @@ The site is designed to be walked through in order, not skimmed:
 | **Noise overlay + type pairing** | A subtle film-grain-style noise texture layered over a mono/display font pairing for a "lab equipment" aesthetic |
 | **Fully responsive** | Layout, 3D scene, and animations adapt across desktop, tablet, and mobile |
 
----
-
-## 🖼️ Preview
-
-> Add real screenshots or a screen recording once available — this sells the project far better than text.
-
-```md
-![Boot sequence](./assets/preview-boot.gif)
-![3D sandbox scene](./assets/preview-scene.png)
-![Lab cards with tilt effect](./assets/preview-cards.gif)
-```
 
 ---
 
@@ -98,9 +82,6 @@ The site is designed to be walked through in order, not skimmed:
 ```
 digital-sandbox/
 ├── index.html            # Entry point — boot sequence + main site
-├── assets/
-│   ├── images/
-│   └── fonts/
 ├── css/
 │   └── style.css
 ├── js/
@@ -110,61 +91,6 @@ digital-sandbox/
 │   └── tilt.js            # Tilt-on-hover lab cards
 └── README.md
 ```
-
----
-
-## 🚀 Getting Started
-
-**Prerequisites:** a modern browser with WebGL support (Chrome, Firefox, or Edge recommended).
-
-```bash
-# Clone the repo
-git clone https://github.com/Priyan-Saxena/digital-sandbox.git
-cd digital-sandbox
-
-# Serve locally (any static server works)
-npx serve .
-```
-
-Then open the local URL shown in your terminal, wait for the boot sequence, and press **Enter**.
-
-> Opening `index.html` directly via `file://` may block some WebGL/module features in certain browsers — a local server is the safer option.
-
----
-
-## ☁️ Deployment
-
-Zero-config deploy on any static host:
-
-| Platform | Steps |
-|---|---|
-| **Netlify** | Drag-and-drop the folder, or connect the GitHub repo for auto-deploys |
-| **Vercel** | Import the GitHub repo — no build command needed for static HTML |
-| **GitHub Pages** | Push to `main`, enable Pages in repo settings, root directory |
-
----
-
-## 🎨 Customizing This for Yourself
-
-If you're forking this as a starting point for your own site:
-
-- **Boot text** — edit the typewriter lines in `boot.js` to your own intro
-- **3D scene** — tweak particle count, wireframe geometry, and colors in `scene.js`
-- **Counters/stats** — update the numbers and labels driven by ScrollTrigger
-- **Cards** — swap in your own projects/hackathons in the lab card markup
-- **Type & color** — the noise overlay and mono/display font pairing are controlled via CSS variables in `style.css`
-
----
-
-## 🌐 Browser Support
-
-| Browser | Supported |
-|---|---|
-| Chrome | ✅ Recommended |
-| Firefox | ✅ Recommended |
-| Edge | ✅ Recommended |
-| Safari | ⚠️ WebGL/animation performance may vary |
-| Mobile browsers | ✅ Responsive, reduced particle count recommended for performance |
 
 ---
 
