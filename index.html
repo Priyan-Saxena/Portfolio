@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyan Saxena — Developer · Designer · AWS Campus Ambassador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas id="webgl"></canvas>
+
+  <!-- Terminal boot overlay -->
+  <div id="boot" class="boot">
+    <div class="boot-inner">
+      <pre id="bootText"></pre>
+      <button id="enterBtn" class="enter-btn hidden">ENTER →</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="logo">PRIYAN<span>_</span></div>
+    <nav>
+      <a href="#about" data-section="about">about</a>
+      <a href="#work" data-section="work">work</a>
+      <a href="#lab" data-section="lab">lab</a>
+      <a href="#contact" data-section="contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span> open to collaborations & internships</p>
+        <h1>I build,<br>design &<br>explore<br>what’s next.</h1>
+        <p class="tagline">Developer · Designer · AI Explorer · AWS Campus Ambassador</p>
+      </div>
+      <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="section-label">// 01 — identity</div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2>Not another portfolio.<br>A sandbox.</h2>
+          <p>
+            I’m Priyan Saxena — 2nd year Computer Science student at JIIT 128.
+            Developer, designer, and AWS Campus Ambassador who loves turning ideas into working products.
+          </p>
+          <p>
+            Outside code you’ll find me exploring new tech, travelling, sketching, listening to music,
+            and showing up at community meetups. Always curious, always building.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="num" data-count="3">0</span>
+            <span class="label">major projects</span>
+          </div>
+          <div class="stat">
+            <span class="num" data-count="3">0</span>
+            <span class="label">hackathons</span>
+          </div>
+          <div class="stat">
+            <span class="num" data-count="2">0</span>
+            <span class="label">years at JIIT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section work" id="work">
+      <div class="section-label">// 02 — selected work</div>
+      <div class="work-list">
+        <a href="https://github.com/Priyan-Saxena" target="_blank" rel="noopener" class="work-item">
+          <span class="work-index">01</span>
+          <div class="work-info">
+            <h3>Hostel Allocation System</h3>
+            <p>Smart allocation & management system for hostel rooms and students</p>
+          </div>
+          <span class="work-tag">Project</span>
+        </a>
+        <a href="https://github.com/Priyan-Saxena" target="_blank" rel="noopener" class="work-item">
+          <span class="work-index">02</span>
+          <div class="work-info">
+            <h3>Movie Recommendation System</h3>
+            <p>Personalized movie suggestions using collaborative & content-based filtering</p>
+          </div>
+          <span class="work-tag">Project</span>
+        </a>
+        <a href="https://github.com/Priyan-Saxena" target="_blank" rel="noopener" class="work-item">
+          <span class="work-index">03</span>
+          <div class="work-info">
+            <h3>ET Smart News</h3>
+            <p>Intelligent news platform with smart filtering and curation</p>
+          </div>
+          <span class="work-tag">Project</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Lab / Hackathons & Interests -->
+    <section class="section lab" id="lab">
+      <div class="section-label">// 03 — the lab & beyond</div>
+      <h2 class="lab-title">Hackathons, community & things I love.</h2>
+      <div class="lab-grid">
+        <div class="lab-card" data-tilt>
+          <div class="lab-icon"><i class="ri-trophy-line"></i></div>
+          <h4>Women Who Master</h4>
+          <p>Zonal round participant — hackathon focused on impactful tech solutions</p>
+        </div>
+        <div class="lab-card" data-tilt>
+          <div class="lab-icon"><i class="ri-rocket-line"></i></div>
+          <h4>ISRO Bharatiya Antariksh</h4>
+          <p>Space-tech hackathon organized by ISRO — exploring solutions beyond Earth</p>
+        </div>
+        <div class="lab-card" data-tilt>
+          <div class="lab-icon"><i class="ri-earth-line"></i></div>
+          <h4>Climate Data Hackathon</h4>
+          <p>Worked with climate datasets to build meaningful insights and tools</p>
+        </div>
+        <div class="lab-card" data-tilt>
+          <div class="lab-icon"><i class="ri-pencil-ruler-2-line"></i></div>
+          <h4>Sketch · Travel · Meetups</h4>
+          <p>Sketching, travelling, music, and connecting with people at community events</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="section-label">// 04 — contact</div>
+      <h2>Let’s build something<br>curious together.</h2>
+      <div class="contact-actions">
+        <a href="https://www.linkedin.com/in/priyan-saxena25/" target="_blank" rel="noopener" class="contact-link">
+          <span>linkedin.com/in/priyan-saxena25</span>
+          <i class="ri-arrow-right-up-line"></i>
+        </a>
+        <div class="socials">
+          <a href="https://github.com/Priyan-Saxena" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/priyan-saxena25/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Priyan Saxena</span>
+    <span class="coords">JIIT 128 · Noida</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
