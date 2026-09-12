@@ -9,7 +9,7 @@
 ![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?style=flat&logo=greensock&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen?style=flat)
 
-**[🔗 Live Demo](#)** &nbsp;•&nbsp; **[LinkedIn](https://www.linkedin.com/in/priyan-saxena25/)** &nbsp;•&nbsp; **[GitHub](https://github.com/Priyan-Saxena)**
+**[🔗 Live Demo](https://priyan-sportfolio.netlify.app/)** &nbsp;•&nbsp; **[LinkedIn](https://www.linkedin.com/in/priyan-saxena25/)** &nbsp;•&nbsp; **[GitHub](https://github.com/Priyan-Saxena)**
 
 > Replace the Live Demo link above once deployed (Netlify/Vercel/GitHub Pages).
 
